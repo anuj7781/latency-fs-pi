@@ -6,14 +6,17 @@ FIO command used -
 fio --name=xfs_a --ioengine=io_uring --directory=/mnt --blocksize=4k --readwrite=randwrite --filesize=10G --size=10G --io_size=10G --numjobs=1 --iodepth=1 --randseed=1 --group_reporting
 
 DIRECT I/O
-I/O type	base	XFS-PI
-randread	97.02	101.82
-read	39.62	44.21
-randwrite	51	52.17
-write	26.84	28.64
+| I/O Type   | Base  | XFS-PI |
+|------------|-------|--------|
+| randread   | 97.02 | 101.82 |
+| read       | 39.62 | 44.21  |
+| randwrite  | 51.00 | 52.17  |
+| write      | 26.84 | 28.64  |
 
-I/O type	base	XFS-PI
-randread	32.82	50.84
-read	25.39	27.09
-randwrite	23.43	23.38
-write	2.85	2.95
+BUFFERED I/O
+| I/O Type   | Base  | XFS-PI |
+|------------|-------|--------|
+| randread   | 32.82 | 50.84  |
+| read       | 25.39 | 27.09  |
+| randwrite  | 23.43 | 23.38  |
+| write      | 2.85  | 2.95   |
