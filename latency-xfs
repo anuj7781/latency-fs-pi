@@ -16,7 +16,7 @@ DIRECT I/O
 BUFFERED I/O
 | I/O Type   | Base  | XFS-PI |
 |------------|-------|--------|
-| randread   | 32.82 | 50.84  |
+| randread   | 32.82 | 33.99  |
 | read       | 25.39 | 27.09  |
 | randwrite  | 23.43 | 23.38  |
 | write      | 2.85  | 2.95   |
